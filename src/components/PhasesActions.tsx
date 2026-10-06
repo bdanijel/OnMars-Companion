@@ -25,53 +25,53 @@ export const PhasesActions: React.FC = () => {
         </p>
 
         {/* Board Side Tabs */}
-        <div className="flex flex-wrap gap-2 mt-6">
+        <div className="flex overflow-x-auto pb-1 sm:flex-wrap gap-2 mt-4 sm:mt-6">
           <button
             onClick={() => { setActiveBoardSide('colony'); setExpandedActionId('construct-building'); }}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-heading font-bold text-sm transition-all ${
+            className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm whitespace-nowrap transition-all shrink-0 ${
               activeBoardSide === 'colony'
                 ? 'bg-amber-600 text-white shadow-lg shadow-amber-950/50 border border-amber-500'
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200'
             }`}
           >
-            <Rocket className="w-4 h-4" />
-            <span>Kolonija na Marsu (Colony Actions)</span>
+            <Rocket className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span>Kolonija (Mars)</span>
           </button>
 
           <button
             onClick={() => { setActiveBoardSide('orbit'); setExpandedActionId('obtain-blueprint'); }}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-heading font-bold text-sm transition-all ${
+            className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm whitespace-nowrap transition-all shrink-0 ${
               activeBoardSide === 'orbit'
                 ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-950/50 border border-cyan-500'
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200'
             }`}
           >
-            <Orbit className="w-4 h-4" />
-            <span>Svemirska Stanica u Orbiti (Orbit Actions)</span>
+            <Orbit className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span>Orbita (Stanica)</span>
           </button>
 
           <button
             onClick={() => { setActiveBoardSide('executive'); setExpandedActionId('executive-actions-overview'); }}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-heading font-bold text-sm transition-all ${
+            className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm whitespace-nowrap transition-all shrink-0 ${
               activeBoardSide === 'executive'
                 ? 'bg-purple-600 text-white shadow-lg shadow-purple-950/50 border border-purple-500'
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200'
             }`}
           >
-            <Zap className="w-4 h-4" />
-            <span>Izvršne Akcije (Executive Actions)</span>
+            <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span>Izvršne Akcije</span>
           </button>
 
           <button
             onClick={() => setActiveBoardSide('shuttle')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-heading font-bold text-sm transition-all ${
+            className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm whitespace-nowrap transition-all shrink-0 ${
               activeBoardSide === 'shuttle'
                 ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-950/50 border border-emerald-500'
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200'
             }`}
           >
-            <ArrowRight className="w-4 h-4" />
-            <span>Shuttle Faza & Putovanje</span>
+            <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span>Shuttle & Putovanje</span>
           </button>
         </div>
       </div>

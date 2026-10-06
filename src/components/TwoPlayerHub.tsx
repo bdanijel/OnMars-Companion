@@ -36,18 +36,18 @@ export const TwoPlayerHub: React.FC<TwoPlayerHubProps> = ({
   return (
     <div className="space-y-8">
       {/* 2-Player Focus Hero Banner */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-red-950/40 p-6 sm:p-8 border border-slate-800 shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-red-950/40 p-4 sm:p-8 border border-slate-800 shadow-2xl">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-semibold text-orange-400">
-            <Users className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-800/80 border border-slate-700 text-[11px] font-semibold text-orange-400">
+            <Users className="w-3 h-3" />
             <span>Optimizovano za 2 Igrača</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-white mt-3">
-            Danijel (Žuta) vs Ceca (Crvena) – Specijalna Pravila
+          <h2 className="text-xl sm:text-3xl font-heading font-bold text-white mt-2 sm:mt-3">
+            Danijel (Žuta) vs Ceca (Crvena) – Pravila
           </h2>
-          <p className="text-sm text-slate-300 mt-2 leading-relaxed">
-            Igra u dva igrača na mapi Marsa je izuzetno tesna, taktička i nemilosrdna. Zalihe u magacinu su prepolovljene,
-            nema novih tehnologija tokom partije, a svako postavljanje koloniste košta više zbog svakog prethodnog prisustva!
+          <p className="text-xs sm:text-sm text-slate-300 mt-1.5 sm:mt-2 leading-relaxed">
+            Igra u dva igrača na mapi Marsa je izuzetno tesna i taktička. Zalihe u magacinu su samo po 2,
+            nema dopune novih tehnologija, a svako postavljanje koloniste košta više zbog svakog prethodnog prisustva!
           </p>
         </div>
 
