@@ -55,7 +55,9 @@ Aplikacija će raditi na `http://localhost:3000`.
 
 ---
 
-## 🚀 Kako Objaviti na GitHub (GitHub Pages / Vercel)
+## 🚀 Kako Objaviti Preko GitHub Actions (Automatski Deploy)
+
+Aplikacija već sadrži konfigurisan GitHub Actions workflow u `.github/workflows/deploy.yml`!
 
 ### 1. Inicijalizacija i Push na GitHub:
 ```bash
@@ -63,10 +65,16 @@ git init
 git add .
 git commit -m "On Mars Companion App for Danijel and Ceca"
 git branch -M main
-git remote add origin https://github.com/VASE_KORISNICKO_IME/on-mars-companion.git
+git remote add origin https://github.com/TVOJ_GITHUB_USERNAME/on-mars-companion.git
 git push -u origin main
 ```
 
-### 2. Besplatan Hosting:
-- **Vercel (preporučeno):** Idite na [vercel.com](https://vercel.com), povežite GitHub nalog i uvezite ovaj repozitorijum. Sajt je onlajn za par sekundi.
-- **GitHub Pages:** Projekat je već konfigurisan sa `base: './'` u `vite.config.ts`, tako da se može bildovati (`npm run build`) i distribuirati preko `gh-pages`.
+### 2. Uključivanje GitHub Actions u podešavanjima repozitorijuma (Jednokratno):
+1. Otvorite vaš repozitorijum na GitHub-u (`https://github.com/TVOJ_GITHUB_USERNAME/on-mars-companion`).
+2. Kliknite na **Settings** na vrhu.
+3. U levom meniju izaberite **Pages** (u odeljku *Code and automation*).
+4. Pod **Build and deployment**, u padajućem meniju **Source** izaberite **GitHub Actions** (umesto *"Deploy from a branch"*).
+
+### 3. Gotovo!
+Workflow će se automatski pokrenuti i za oko 1 minut vaša aplikacija će biti dostupna na:
+`https://TVOJ_GITHUB_USERNAME.github.io/on-mars-companion/`
