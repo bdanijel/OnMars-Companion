@@ -1,0 +1,6 @@
+{
+  "name": "On Mars Companion & Rulebook Assistant",
+  "description": "Interaktivni pratilac za društvenu igru On Mars (Vital Lacerda) optimizovan za 2 igrača (Danijel - žuta i Ceca - crvena): pravila, postavka, FAQ, pretraga komponenti i kalkulator poena.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
